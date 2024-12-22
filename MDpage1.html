@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필연과 우연_굿즈 페이지1</title>
+    <style>
+             *{
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        section{
+            position: relative;
+            width: 100vh;
+            height: 100vh;
+            background: url('./이미지 파일1/Title2.jpg') fixed;
+            background-size: 100%;
+            display: flex;
+            flex-direction:row;
+        }
+
+        .page1{
+            position: relative;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction:row;
+        }
+
+        .page .right {background-color: wheat;padding: 20px; flex:50%;}
+        .page .left{background-color: wheat;padding: 20px; flex:50%;}
+
+        .Goods{
+            position: absolute;
+            left: 0;
+            width: 50%;
+        } 
+        .Goods2{
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+        .page2{
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .nextButton {
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 95%;
+            width: 3%;
+            animation: slideLeft 1s ease-out;
+        }
+
+        body, html{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+        .header{
+            background-color:transparent;
+            z-index: 1200;
+            padding: 10px;
+            text-align: center;
+            font-size: 2.2rem;
+            position: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .header .logo {
+            width: 10%;
+        }
+
+        .header .button {
+            width: 6%;
+            position: absolute;
+            left: 30px;
+            top : 10px;
+        }
+        .header .button2 {
+            width: 6%;
+            position: absolute;
+            right : 30px;
+            top : 10px;
+        }
+    
+     
+
+    </style>
+</head>
+<body>
+     
+    <div class="header">
+        <a href ="http://127.0.0.1:5500/index.html">
+        <img src="./이미지 파일1/Title5.png" , width="10%" alt="Logo"> 
+        </a>
+        <a href="http://127.0.0.1:5500/index.html">
+         <img src="./이미지 파일/Room1_Diary2.png" class="button" alt="Button">
+        </a>
+        <a href="https://x.com/FateAndAccidy">
+            <img src="./이미지 파일1/도트.png" class="button2" alt="Button2">
+           </a>
+    </div> 
+    <section class = "page1">
+        <img class ="title" img src="./이미지 파일/DreamDiary1_1.jpg", width = 95%; >
+
+        <div class = "right">
+            <img onmouseout = "this.src='./이미지 파일/아크릴 스탠드 남자 (2).png'" onmouseover = "this.src= './이미지 파일/아크릴 스탠드 여자 (2).png'" class="Goods" img src="./이미지 파일/아크릴 스탠드 남자 (2).png"  >
+        </div>
+        <div class = "left">
+            <img onmouseout = "this.src='./이미지 파일/아크릴 코롯토 여자.png'" onmouseover = "this.src= './이미지 파일/아크릴 코롯토 남자.png'" class="Goods2" img src="./이미지 파일/아크릴 코롯토 여자.png" >
+        </div>
+        <a href="http://127.0.0.1:5500/MDpage2.html">
+            <img class ="nextButton" img src="./이미지 파일/Room_Move_UI_2.png" alt="Button1" >
+        </a>
+    </section>
+</body>
+</html>

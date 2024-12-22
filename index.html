@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필연과 우연</title>
+    <style>
+        
+            *{
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        section{
+            width: 100vw;
+            height: 100vh;
+            background: url('./이미지 파일1/Title2.jpg') fixed;
+            background-size: 100%;
+            display: flex;
+        }
+
+        .page1{
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .page2{
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .PV{
+            position: absolute;
+            display: flex;
+            width: 50vw; /* 뷰포트 너비의 50% */
+            height: auto; /* 비율 유지 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid white; /* 테두리 두께와 색상 */
+            border-radius: 10px; /* 모서리를 둥글게 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+        }
+
+
+        body, html{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .header{
+            background-color:transparent;
+            z-index: 1200;
+            padding: 10px;
+            text-align: center;
+            font-size: 2.2rem;
+            position: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .header .logo {
+            width: 10%;
+        }
+
+        .header .button {
+            width: 6%;
+            position: absolute;
+            left: 30px;
+            top : 10px;
+        }
+        .header .button2 {
+            width: 6%;
+            position: absolute;
+            right : 30px;
+            top : 10px;
+        }
+    
+
+
+        .PV{
+            position: absolute;
+            display: flex;
+            top: 80%;
+            width: 72%;
+            height: 72%;
+
+        }
+            
+        .Script1 {
+            position: absolute;
+            display: flex;
+            top: 120%;
+            left: 6%;
+            width: 90%;
+            animation: slideLeft 1s ease-out;
+        }
+
+        .Script2 {
+            position: absolute;
+            top: 170%;
+            left: 3%;
+            width: 90%;
+            animation: slideRight 1s ease-out;
+        } 
+        .InGame1 {
+            position: absolute;
+            display: flex;
+            top: 200%;
+            left: 2%;
+            width: 90%;
+            animation: slideLeft 1s ease-out;
+        }
+
+        .InGame2 {
+            position: absolute;
+            top: 220%;
+            left: 3%;
+            width: 90%;
+            animation: slideRight 1s ease-out;
+        }
+
+
+        @keyframes slideLeft {
+            from {
+                left: -100px;
+                opacity: 0;
+        }
+            to {
+        left: 60px;
+        opacity: 1;
+    }
+}
+
+        @keyframes slideRight {
+            from {
+             left: 100px;
+               opacity: 0;
+          }
+         to {
+               left: 60px;
+             opacity: 1;
+         }
+} 
+        @keyframes disappearLeft {
+            from {
+        left: 60px;
+        opacity: 1;
+    }
+
+            to{
+                left: -100px;
+                opacity: 0;
+        }
+            
+        }
+        @keyframes disappearRight {
+            from {
+               left: 60px;
+             opacity: 1;
+         }
+
+            to{
+                left: 100px;
+               opacity: 0;
+        }   
+    }
+
+    .Character1{
+        position: absolute;
+        top: 320%;
+        left: 0;
+        width: 30%;
+        opacity: 1;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+    }  
+
+    .Character3{
+        position: absolute;
+            top: 340%;
+            left: 20%;
+            width: 80%;
+    }
+
+
+    .Character2{
+        position: absolute;
+            top: 428%;
+            left: 72%;
+            width: 25%;
+            opacity: 1;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+
+
+    }
+    .Character4{
+        position: absolute;
+            top: 460%;
+            left: 5%;
+            width: 80%;
+    }
+
+ 
+
+    .footer{
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <a href ="#top">
+        <img src="./이미지 파일1/Title5.png" , width="10%" alt="Logo"> 
+        </a>
+        <a href="http://127.0.0.1:5500/MDpage1.html">
+         <img src="./이미지 파일1/굿즈 페이지 버튼.png" class="button" alt="Button">
+        </a>
+        <a href="https://x.com/FateAndAccidy">
+            <img src="./이미지 파일1/도트.png" class="button2" alt="Button2">
+           </a>
+    </div>
+   
+    <section>
+        <iframe class="PV" width="560" height="315" src="https://www.youtube.com/embed/kJ-N2OmLiVs?si=eBf5_zr6IvUjRcYc&amp;controls=0&amp;start=7" title="YouTube video player" frameborder="300px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    
+    <section class = "page1">
+        <img class ="title" img src="./이미지 파일2/DreamDiary2.jpg", width = 95%; >
+        <img class = "Script1" img src="./이미지 파일2/Dlalogue_1.png">  
+        <img class = "Script2" img src="./이미지 파일2/Dlalogue_2.png">
+    </section>
+
+        
+    <section class="page2">
+        <img class ="title" img src="./이미지 파일2/DreamDiary2.jpg", width = 95%; >
+        <img class = "InGame1" img src="./이미지 파일2/FA_InGmae.png">
+        <img class = "InGame2" img src="./이미지 파일2/FA_InGame2.png">
+    </section>
+
+    <section class="page3">
+        <img onmouseout = "this.src='./이미지 파일3/AccidyGirlUnrest (1).png' "onmouseover = "this.src= './이미지 파일3/여 웃음.png'"class = "Character1" img src="./이미지 파일3/AccidyGirlUnrest (1).png" alt="Character1">
+        <img class = "Character3" img src="./이미지 파일3/0917여자우연프로필 (1).png">
+        <img class = "Character4" img src="./이미지 파일3/0917남자우연프로필 (1).png">
+        <img onmouseout ="this.src ='./이미지 파일3/AccidyBoyUnrest (1).png'" onmouseover = "this.src = './이미지 파일3/AccidyBoySmile (1).png'" class = "Character2" img src="./이미지 파일3/AccidyBoyUnrest (1).png">
+        <img class = "title2" img src="./이미지 파일/배경1.jpg" width="100%">
+    </section>
+
+    <footer class="footer">
+        <p>Team Fate</p>
+        <p>contact : accidy1031@gmail.com</p>
+    </footer>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
